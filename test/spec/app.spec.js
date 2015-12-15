@@ -3,8 +3,13 @@
 
 describe("Santa", function() {
 
-  it("should...", function() {  
+  describe("getCurrentRequest", function() {
+      it("should get the first request for first", function() {
+          expect(SantaModel.getCurrentRequest).toBe(SantaModel.listQuestions[0]);
+      });
+  });
     
-  });    
- 
+describe("pack", function() {
+      
+  });
 });
