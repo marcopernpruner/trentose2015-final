@@ -37,11 +37,11 @@ var SantaModel = {
    pack : function(item) {
        console.log(item);
        if (this.listQuestions[this.currentElement].answer == item) {
-           this.currentScore++
+           this.currentScore++;
            this.next();
            return 1;
        } else {
-           this.next();
+           this.currentScore--;
            return 0;
        }
    }      
